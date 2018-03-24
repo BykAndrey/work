@@ -1,0 +1,133 @@
+@blue:#3399ff;
+
+@media screen and (max-width:1170px){
+    .toggle-menu{
+        display: inline-block;
+    }
+    .header{
+        position: fixed;
+        top:0px;
+        width: 100%;
+        background-color: white;
+        z-index: 4;
+        box-shadow: 0px 0px 1px 1px grey;
+
+    }
+    .bread-crumbles{
+        margin-top: 75px;
+    }
+    .container{
+        width: 100%;
+    }
+    .top-menu{
+        display: none;
+        position: absolute;
+        top: 73px;
+        left: 0px;
+        width: 100%;
+        // height: 100%;
+        flex-direction: column;
+        background-color: white;
+        // box-shadow: 0px 0px 11px -10px @blue;
+        border-bottom:1px solid rgb(209, 209, 209);
+        z-index: 5;;
+    }
+ 
+    .top-menu__item{
+        margin: 25px 55px;
+        &-active{
+            &:first-child{
+                margin: 25px 55px;
+            }
+        }
+    }
+    .header-toggle-phone{
+        margin: 0;
+    }
+    .content-features{
+        justify-content: space-evenly;
+    }
+
+}
+@media screen and(max-width:900px){
+    .contact-data-container{
+        width: 100%;
+    }
+
+    .contacts-block{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts-block__item{
+        margin-bottom: 25px;
+        width: initial;
+    }
+
+    .common-data{
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and(max-width:685px){
+
+    .toggle-phone-menu{
+        display: inline-block;
+    }
+
+    .header-phone-block{
+        display: none;
+        position: absolute;
+        top: 73px;
+        left: 0px;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        border-bottom:1px solid rgb(209, 209, 209);
+        z-index: 5;;
+    }
+    .contacts-block__item{
+        img{
+            width: calc(100% - 30%);
+            margin: auto;
+        }
+    }
+    .header-phone{
+        
+        margin:25px 0px;
+
+        text-align: center;
+
+    }
+    .header-toggle-phone {
+        margin: 25px;
+        text-align: center;
+        
+    }
+    .header-phone-block{
+        height: auto;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+}
+
+
+@media screen and(max-width:400px){
+  .target-phone-window{
+      width: 100%;
+      border-radius: 0px;
+  }
+  
+  .footer-creater{
+      font-size: 12px;
+  }
+
+}
+
+@media screen and(max-width:319px){
+    .toggle-menu,.toggle-phone-menu{
+        width:25px;
+    }
+}
